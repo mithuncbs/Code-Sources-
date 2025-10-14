@@ -1,0 +1,11 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int A, B;
+    cin >> A >> B;
+    cout << static_cast<int>(B / (4.0 / 3.0 * 3.1415 * pow(A, 3))) << endl;
+    return 0;
+}
