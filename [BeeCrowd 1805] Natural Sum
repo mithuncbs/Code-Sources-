@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    long long A, B, Sum;
+    scanf("%lld %lld", &A, &B);
+    
+    Sum = (A + B) * (B - A + 1) / 2;
+    
+    printf("%lld\n", Sum);
+    return 0;
+}
