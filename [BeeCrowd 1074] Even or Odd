@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int T, N;
+    scanf("%d", &T);
+    for (int i = 0; i < T; i++)
+    {
+        scanf("%d", &N);
+        if (N == 0)
+        {
+            printf("NULL\n");
+        }
+        else
+        {
+            printf("%s ", (N % 2 == 0) ? "EVEN" : "ODD");
+            printf("%s\n", (N > 0) ? "POSITIVE" : "NEGATIVE");
+        }
+    }
+    return 0;
+}
