@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int Cards[5];
+    int Inc = 1, Dec = 1;
+
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &Cards[i]);
+    }
+
+    for (int i = 0; i < 4; i++)
+    {
+        if (Cards[i] < Cards[i + 1])
+        {
+            Dec = 0;
+        }
+        else if (Cards[i] > Cards[i + 1])
+        {
+            Inc = 0;
+        }
+        else
+        {
+            Inc = 0;
+            Dec = 0;
+        }
+    }
+    if (Inc)
+    {
+        printf("C\n");
+    }
+    else if (Dec)
+    {
+        printf("D\n");
+    }
+    else
+    {
+        printf("N\n");
+    }
+
+    return 0;
+}
