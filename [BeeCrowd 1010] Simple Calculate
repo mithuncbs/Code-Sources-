@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+    
+int Pro1, Qnt1, Pro2, Qnt2;
+float Price1, Price2, TotalPrice;
+
+scanf("%d %d %f", &Pro1, &Qnt1, &Price1);
+scanf("%d %d %f", &Pro2, &Qnt2, &Price2);
+
+TotalPrice = (Qnt1 * Price1) + (Qnt2 * Price2);
+
+printf("VALOR A PAGAR: R$ %.2f\n", TotalPrice);
+
+    return 0;
+}
