@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int N;
+    while (cin >> N && 1 <= N && N <= 1000)
+    {
+        int H, C, L;
+        cin >> H >> C >> L;
+        cout << fixed << setprecision(4);
+        cout << ((sqrt(H * H + C * C)) * L * N) / 10000 << endl;
+    }
+    return 0;
+}
