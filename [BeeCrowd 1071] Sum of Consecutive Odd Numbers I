@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int X, Y, sum = 0;
+    scanf("%d %d", &X, &Y);
+
+    int min = (X < Y) ? X : Y;
+    int max = (X > Y) ? X : Y;
+
+    for (int i = min + 1; i < max; i++)
+    {
+        if (i % 2 != 0)
+            sum += i;
+    }
+
+    printf("%d\n", sum);
+    return 0;
+}
