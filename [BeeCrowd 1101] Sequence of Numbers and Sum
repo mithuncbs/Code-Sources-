@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int M, N, sum;
+
+    while (scanf("%d %d", &M, &N) && M > 0 && N > 0)
+    {
+        sum = 0;
+
+        int min = (M < N) ? M : N;
+        int max = (M > N) ? M : N;
+
+        for (int i = min; i <= max; i++)
+        {
+            printf("%d ", i);
+            sum += i;
+        }
+
+        printf("Sum=%d\n", sum);
+    }
+
+    return 0;
+}
