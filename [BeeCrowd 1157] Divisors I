@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N;
+    for (int i = 1; i <= N; i++)
+    {
+        vector<int> divisors;
+        if (N % i == 0)
+        {
+            divisors.push_back(i);
+            cout << i << endl;
+        }
+    }
+    return 0;
+}
