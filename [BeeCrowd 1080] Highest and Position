@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int Number, MaxNumber = 0, Position = 0;
+    for (int i = 1; i <= 100; i++)
+    {
+        scanf("%d", &Number);
+        if (Number > MaxNumber)
+        {
+            MaxNumber = Number;
+            Position = i;
+        }
+    }
+    printf("%d\n%d\n", MaxNumber, Position);
+    return 0;
+}
