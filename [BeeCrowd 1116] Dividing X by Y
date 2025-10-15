@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int T, X, Y;
+    scanf("%d", &T);
+    for (int i = 1; i <= T; i++)
+    {
+        scanf("%d %d", &X, &Y);
+        if (Y == 0)
+        {
+            printf("divisao impossivel\n");
+        }
+        else
+        {
+            printf("%.1f\n", (float)X / Y);
+        }
+    }
+    return 0;
+}
