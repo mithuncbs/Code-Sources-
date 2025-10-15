@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int v, arr[10];
+    cin >> v;
+    for (int i = 0; i < 10; i++)
+    {
+        arr[i] = v;
+        cout << "N[" << i << "] = " << arr[i] << endl;
+        v *= 2;
+    }
+}
