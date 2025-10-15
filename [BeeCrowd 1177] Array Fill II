@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int T, i = 0;
+    cin >> T;
+
+    if (T <2 || T > 50) return 1;
+
+    vector<int> N(1000);
+    while (i < 1000)
+    {
+        for (int j = 0; j < T && i < 1000; j++)
+        {
+            N[i] = j;
+            cout << "N[" << i << "] = " << N[i] << endl;
+            i++;
+        }
+    }
+
+    return 0;
+}
