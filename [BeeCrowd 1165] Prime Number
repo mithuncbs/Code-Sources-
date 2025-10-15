@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;
+    for (int i = 0; i < T; i++)
+    {
+        int X;
+        cin >> X;
+        bool IsPrime = true;
+        if (X <= 1)
+        {
+            IsPrime = false;
+        }
+        else
+        {
+            for (int i = 2; i <= sqrt(X); i++)
+            {
+                if (X % i == 0)
+                {
+                    IsPrime = false;
+                    break;
+                }
+            }
+        }
+        if (IsPrime)
+        {
+            cout << X << " eh primo" << endl;
+        }
+        else
+        {
+            cout << X << " nao eh primo" << endl;
+        }
+    }
+    return 0;
+}
