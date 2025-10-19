@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;
+    for (int i = 1; i <= T; i++)
+    {
+        int N;
+        cin >> N;
+        vector<int> ages(N);
+        for (int i = 0; i < N; i++)
+        {
+            cin >> ages[i];
+        }
+        int captainAge = ages[N / 2];
+        cout << "Case " << i << ": " << captainAge << endl;
+    }
+    return 0;
+}
