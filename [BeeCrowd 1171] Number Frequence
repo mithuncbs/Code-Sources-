@@ -1,0 +1,22 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N;
+
+    map<int, int> count;
+    for (int i = 0; i < N; i++)
+    {
+        int num;
+        cin >> num;
+        count[num]++;
+    }
+    for (auto pair : count)
+    {
+        cout << pair.first << " aparece " << pair.second << " vez(es)" << endl;
+    }
+    return 0;
+}
