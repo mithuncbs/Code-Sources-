@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int N, Q;
+    while (cin >> N >> Q)
+    {
+        vector<int> grades(N);
+        for (int i = 0; i < N; i++)
+        {
+            cin >> grades[i];
+        }
+        for (int i = 0; i < N - 1; i++)
+        {
+            for (int j = 0; j < N - i - 1; j++)
+            {
+                if (grades[j] < grades[j + 1])
+                {
+                    swap(grades[j], grades[j + 1]);
+                }
+            }
+        }
+        for (int i = 0; i < Q; i++)
+        {
+            int Position;
+            cin >> Position;
+            cout << grades[Position - 1] << endl;
+        }
+    }
+    return 0;
+}
