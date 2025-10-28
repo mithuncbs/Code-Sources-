@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int T;
+    cin >> T;
+    int ledcount[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
+    while (T--)
+    {
+        string num;
+        cin >> num;
+
+        int total_leds = 0;
+        for (char digit : num)
+        {
+            total_leds += ledcount[digit - '0'];
+        }
+        cout << total_leds << " leds" << endl;
+    }
+    return 0;
+}
